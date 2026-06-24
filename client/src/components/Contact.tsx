@@ -7,8 +7,9 @@ import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from "./ui/breadcrumb";
-import { Home } from "lucide-react";
+import { Clock4, Home, Mail, MapPin, Phone } from "lucide-react";
 import { Textarea } from "./ui/textarea";
+import { Button } from "./ui/button";
 
 const Contact = () => {
   return (
@@ -90,28 +91,23 @@ const Contact = () => {
                 rows={6}
               />
             </div>
-            <button
-              className="bg-accent-amber text-background-deep font-bold font-heebo px-10 py-4 rounded-lg hover:shadow-[0_0_20px_rgba(254,161,22,0.3)] transition-all transform active:scale-95"
+            <Button
+              size="lg"
+              className="bg-accent-amber text-text-muted font-bold font-heebo px-10 py-6 rounded-lg hover:shadow-[0_0_20px_rgba(254,161,22,0.3)] transition-all transform active:scale-95"
               type="submit"
             >
               Send Message
-            </button>
+            </Button>
           </form>
         </section>
-        {/* <!-- Right Column: Info --> */}
+
+        {/* Right Column: Info */}
         <section className="animate-fade-up delay-200">
           <h2 className="font-headline-md text-white mb-8">Get in Touch</h2>
           <div className="space-y-10">
-            {/* <!-- Address --> */}
             <div className="flex gap-6 items-start group">
-              <div className="w-14 h-14 shrink-0 rounded-full bg-accent-amber flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <span
-                  className="material-symbols-outlined text-background-deep text-2xl"
-                  data-icon="location_on"
-                  data-weight="fill"
-                >
-                  location_on
-                </span>
+              <div className="w-14 h-14 shrink-0 rounded-full bg-accent-amber flex items-center justify-center">
+                <MapPin className="text-background-deep" />
               </div>
               <div>
                 <h3 className="font-headline-sm text-accent-amber mb-1">
@@ -124,14 +120,8 @@ const Contact = () => {
             </div>
             {/* <!-- Phone --> */}
             <div className="flex gap-6 items-start group">
-              <div className="w-14 h-14 shrink-0 rounded-full bg-accent-amber flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <span
-                  className="material-symbols-outlined text-background-deep text-2xl"
-                  data-icon="phone"
-                  data-weight="fill"
-                >
-                  phone
-                </span>
+              <div className="w-14 h-14 shrink-0 rounded-full bg-accent-amber flex items-center justify-center">
+                <Phone className="text-background-deep" />
               </div>
               <div>
                 <h3 className="font-headline-sm text-accent-amber mb-1">
@@ -142,14 +132,8 @@ const Contact = () => {
             </div>
             {/* <!-- Email --> */}
             <div className="flex gap-6 items-start group">
-              <div className="w-14 h-14 shrink-0 rounded-full bg-accent-amber flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <span
-                  className="material-symbols-outlined text-background-deep text-2xl"
-                  data-icon="mail"
-                  data-weight="fill"
-                >
-                  mail
-                </span>
+              <div className="w-14 h-14 shrink-0 rounded-full bg-accent-amber flex items-center justify-center">
+                <Mail className="text-background-deep" />
               </div>
               <div>
                 <h3 className="font-headline-sm text-accent-amber mb-1">
@@ -160,14 +144,8 @@ const Contact = () => {
             </div>
             {/* <!-- Opening Hours --> */}
             <div className="flex gap-6 items-start group">
-              <div className="w-14 h-14 shrink-0 rounded-full bg-accent-amber flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <span
-                  className="material-symbols-outlined text-background-deep text-2xl"
-                  data-icon="schedule"
-                  data-weight="fill"
-                >
-                  schedule
-                </span>
+              <div className="w-14 h-14 shrink-0 rounded-full bg-accent-amber flex items-center justify-center">
+                <Clock4 className="text-background-deep" />
               </div>
               <div className="w-full">
                 <h3 className="font-headline-sm text-accent-amber mb-2">

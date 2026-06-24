@@ -1,6 +1,7 @@
+import { Mouse } from "lucide-react";
 import About from "./About";
 import { Button } from "./ui/button";
-import Hero from "@/assets/hero.png"
+import Hero from "@/assets/hero.png";
 
 const Home = () => {
   return (
@@ -17,9 +18,9 @@ const Home = () => {
               <span className="text-accent-amber">Delicious Meal</span>
             </h1>
             <p className="font-body-lg text-body-lg text-text-muted mb-10 max-w-xl leading-relaxed">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-              diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem
-              sit clita duo justo magna dolore erat amet.
+              From hearty classics to chef's specials, our menu has something
+              for everyone. Fresh ingredients, bold flavors, and meals made to
+              satisfy.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
@@ -47,17 +48,13 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce-slow flex flex-col items-center gap-2 opacity-50">
-          <span className="material-symbols-outlined text-text-primary">
-            mouse
-          </span>
-          <div className="w-px h-12 bg-linear-to-b from-text-primary to-transparent"></div>
+        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce-slow flex flex-col items-center gap-2 ">
+          <Mouse size={50}/>
         </div>
       </section>
       {/* <!-- Services Section --> */}
-      
-     
-     <About />
+
+      <About />
 
       <button
         className="fixed bottom-8 right-8 w-12 h-12 bg-accent-amber rounded-full text-background-deep flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:scale-110 shadow-lg z-50"

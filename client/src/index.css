@@ -6,6 +6,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@500&display=swap");
 @custom-variant dark (&:is(.dark *));
 
+@keyframes bounce-slow {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px);
+  }
+}
+
 @theme {
   /* ===== COLORS ===== */
   --color-outline: #a18d7a;
@@ -125,6 +135,6 @@
   --text-label-lg--font-weight: 600;
 
   --bg-hero: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCpPj6SSVPj9m8Aq1sL9GX8_XnlKluwB-oWo9zQNTotSoeaqauuf-kopWeF0r9YwRKufbZDuRdfA7fjc1-dtCQXEg9Y1knoACeBjdEhK1IIa15xaUeS-b9_P78OGVXnZQfHnQIkSfCfh4kHdb70ucle8t6nf2TQBVcEVN_HSKIyFgDCMdfox7ZaFufR4N2hVlUrjzuwrM8QVp7wyJY3DTXQMPAGc12y1h0YFOI54ofS-93zeRxIAnjvmqOxdHVJtHTYPGomE1kAYMA");
+
+  --animate-bounce-slow: bounce-slow 2s ease-in-out infinite;
 }
-
-

@@ -95,14 +95,14 @@ const About = () => {
               </span>
             </h2>
             <p className="font-body-md text-body-md text-text-muted mb-6 leading-relaxed">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-              diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem
-              sit.
+              We are a passionate team dedicated to bringing you fresh,
+              delicious food made from quality ingredients. Every dish is
+              prepared with care and served with heart.
             </p>
             <p className="font-body-md text-body-md text-text-muted mb-10 leading-relaxed">
-              Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-              diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem
-              sit clita duo justo magna dolore erat amet.
+              Whether you're here for a quick bite or a special night out, we
+              make sure every visit feels warm, welcoming, and worth coming back
+              for.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
               <div className="flex items-center gap-6 border-l-4 border-accent-amber pl-6">
